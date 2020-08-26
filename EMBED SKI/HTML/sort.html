@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sortiranje tabele | SKI projekat</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <section>
+        <table id="tbl-sortiranje" class="container tabela">
+            <tr>
+                <th onclick="sortiraj(0)">ID</th>
+                <th onclick="sortiraj(1)">Ime radnika</th>
+                <th onclick="sortiraj(2)">Prezime radnika</thonclick="sortiraj(this)">
+                <th onclick="sortiraj(3)">Datum rođenja</th>
+                <th onclick="sortiraj(4)">Kvalifikacija</th>
+                <th onclick="sortiraj(5)">Plata</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Stefan</td>
+                <td>Ivković</td>
+                <td>13.12.1998.</td>
+                <td>VSS</td>
+                <td>120000 RSD</td>
+
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>Anđela</td>
+                <td>Živanović</td>
+                <td>27.11.2000.</td>
+                <td>VKV</td>
+                <td>115000 RSD</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Filip</td>
+                <td>Drašković</td>
+                <td>13.12.1998.</td>
+                <td>KV</td>
+                <td>105000 RSD</td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Milica</td>
+                <td>Jakovljević</td>
+                <td>05.07.1998.</td>
+                <td>VSS</td>
+                <td>120000 RSD</td>
+
+            </tr>
+        </table>
+    </section>
+    <script src="../JS/script_sorting.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biografija - Stefan Ivković</title>
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/colors.css">
+    <link rel="stylesheet" href="../css/biography.css">
+    <script src="https://kit.fontawesome.com/af0d1a7b9c.js" crossorigin="anonymous"></script>
+</head>
+<body onload="ucitajPodatke()">
+    <header class="container-fluid black">
+        <div class="container">
+            <div class="row">
+                <div class="col-s-6 col-m-4">
+                    <h1 id="main_title" class="disp-1"><span>Stefan</span> Ivković</h1>
+                </div>
+                <a id="collapse-button" href="javascript:void(0);" class="float-r" onclick="collapse()">
+                    <i class="fa fa-bars fa-2x"></i>
+                </a>
+                <div>
+                    <nav id="navigation">
+                        <ul id="nav-menu">
+                            <li><a href="index.html" onclick><span id="homeTekst">Početna</span><span id="homeIkonica"><i class="fas fa-home"></i></span></a></li>  
+                            <li class="active"><a href="biography.html" onclick="dodajPosetu(this)">Biografija</a></li>
+                            <li><a href="gallery.html" onclick="dodajPosetu(this)">Galerija</a></li>
+                            <li><a href="prototypes.html" onclick="dodajPosetu(this)">Prototipovi</a></li>
+                            <li><a href="contact.html" onclick="dodajPosetu(this)">Kontaktiraj me</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="cover" class="c-darke-gray p-rel">
+        <div class="container">
+            <div class="row">
+                <div class="col-s-12">
+                    <div id="wrapSlika">
+                        <img id="profilnaSlika" src="../IMG/main.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bio" class="o-auto">
+        <div class="container">
+            <div class="row o-auto">
+                <div class="col-s-12 col-m-6 p-30">
+                    <h1 class="naslov-bio">Bilo jednom davno...</h1>
+                    <p class="paragraf-bio">Rođen sam u Smederevu 13. decembra 1998. Od malih nogu sam se lepio na računar, mada je bilo takvo vreme da sam najviše vremena provodio na ulici, fudbalskom terenu ili drveću.</p>
+                </div>
+                <div class="col-s-12 col-m-6 p-30">
+                    <h1 class="naslov-bio">A onda je počelo</h1>
+                    <p class="paragraf-bio">Već početkom šestog razreda znatno više vremena provodim za računarom, uglavnom na igricama, sve dok nisam dobio programiranje na Informatici. To je bila ljubav na prvi pogled!</p>
+                </div>
+            </div>
+            <div class="row o-auto">
+                <div class="col-s-12 col-m-6 p-30">
+                    <h1 class="naslov-bio">Srednjoškolski dani</h1>
+                    <p class="paragraf-bio">Dok su moji vršnjaci počinjali da uče osnovne stvari, ja sam uveliko radio na svojim projektima. Naravno nijedan nisam do kraja završio, ali sam iz istih stekao iskustvo.</p>
+                </div>
+                <div class="col-s-12 col-m-6 p-30">
+                    <h1 class="naslov-bio">Trenutno</h1>
+                    <p class="paragraf-bio">Učim... I celog života ću, ali sada učim sa ogromnom voljom. Usavršavam objektno-orijentisano programiranje jer planiram da se zaposlim kao .NET programer. I uspeću u tome.</p>                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="c-coding-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-s-12 col-m-6">
+                    <p id="popular-links">Najpopularniji linkovi</p>
+                    <ul id="ulPopularniLinkovi">
+
+                    </ul>
+                </div>
+                <div class="col-s-12 col-m-6">
+                    <p id="popular-links">Društvene mreže</p>
+                    <a class="dr-mreze" href=""><i class="fab fa-instagram fa-2x"></i></a>
+                    <a class="dr-mreze" href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a class="dr-mreze" href=""><i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-s-12 c-darke-gray">
+                <p id="copyright">© 2020 Stefan Ivković | Created with <i class="far fa-heart"></i></p>
+                <input type="button" value="Obrisi local storage" onclick="obrisiMemoriju()" hidden>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS/script.js"></script>
+    <script src="../JS/scriptFooter.js"></script>
+</body>
+</html>

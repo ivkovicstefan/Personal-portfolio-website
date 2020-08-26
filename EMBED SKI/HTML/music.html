@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Muzika | SKI projekat</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/musicplayer.css">
+</head>
+<body onload="ucitajPrvuPesmu()">
+    <section id="tabela">
+        <table id="lista-pesama" class="container tabela">
+            <tr>
+                <th>NASLOV PESME</th>
+                <th>IZVOĐAČ</th>
+            </tr>
+            <tr onclick="pustiPesmu(this)">
+                <td>SWEET BUT PSYCHO</td>
+                <td>AVA MAX</td>
+
+            </tr>
+            <tr onclick="pustiPesmu(this)">
+                <td>NEVER BE THE SAME</td>
+                <td>CAMILA CABELLO</td>
+            </tr>
+            <tr onclick="pustiPesmu(this)">
+                <td>LOOK WHAT YOU MADE ME DO</td>
+                <td>TAYLOR SWIFT</td>
+            </tr>
+            <tr onclick="pustiPesmu(this)">
+                <td>ALL ABOUT THE BASS</td>
+                <td>MEGHAN TRAINOR</td>
+            </tr>
+        </table>
+
+    </section>
+    <input type="text" name="SWEET BUT PSYCHO" value="../AUDIO/Ava Max - Sweet but Psycho.mp3" hidden>
+    <input type="text" name="NEVER BE THE SAME" value="../AUDIO/Camila Cabello - Never Be the Same (Official Audio) (1).mp3" hidden>
+    <input type="text" name="LOOK WHAT YOU MADE ME DO" value="../AUDIO/Taylor Swift - Look What You Made Me Do (Lyric Video).mp3" hidden>
+    <input type="text" name="ALL ABOUT THE BASS" value="../AUDIO/Meghan Trainor - All About That Bass (Official Music Video).mp3" hidden>
+    <footer>     
+        <audio id="mp3player" preload="metadata">
+            <source id="playerPesma" src="" type="audio/mp3">
+        </audio>
+        <div id="vremenska-linija">
+            <div id="progress"></div>
+            <div id="krug"></div>
+        </div>
+            <div id="dugmad">
+                <button id="playpause" class="dugme" onclick="pauzirajIliPusti()"></button>
+                <button id="forward" class="dugme" onclick="premotajPesmu()"></button>
+                <button id="next" class="dugme" onclick="sledecaPesma()"></button>
+                <p id="vreme">0:00 / 0:00</p>  
+                <p id="trenutnoSePusta"></p>    
+            </div> 
+        </div>
+    </footer>
+
+    <script src="../JS/script_musicplayer.js"></script>
+</body>
+</html>

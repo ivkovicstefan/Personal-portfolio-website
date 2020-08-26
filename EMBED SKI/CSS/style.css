@@ -1,0 +1,349 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+
+.container
+{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reklama
+{
+    position: fixed;
+    top:0;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    animation-name: Reklama-anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 1000;
+}
+
+@keyframes Reklama-anim
+{
+    from
+    {
+        background-color: rgb(0, 0, 0);
+    }
+    to
+    {
+        background-color: rgb(85, 0, 71);
+    }
+}
+
+#followme:before
+{
+    color:white;
+    font-family: 'Consolas';
+    line-height: 50px;
+    font-size: 20px;
+    width:0%;
+    overflow: hidden;
+    content:"> Zapratite me na drustvenim mrezama_";
+    animation-name: ReklamaTekst-anim;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    color:rgb(255, 255, 255);
+}
+
+@keyframes ReklamaTekst-anim
+{
+    from
+    {
+        content:"> Zapratite me na drustvenim mrezama_";
+
+    }
+    to
+    {
+        content:"> Zapratite me na drustvenim mrezama";
+    }
+}
+
+.d-mreze
+{
+    width:25px;
+    height: 25px;
+    display: inline-block;
+    margin-top: 13px;
+    animation-name: ReklamaIkonica-anim;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.d-mreze:hover
+{
+    opacity: 0.8;
+}
+
+.yt
+{
+    width:30px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 10px;
+    animation-name: ReklamaIkonica-anim;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.yt:hover
+{
+    opacity: 0.8;
+}
+
+@keyframes ReklamaIkonica-anim
+{
+    from
+    {
+        transform: scale(1.0);
+    }
+    to
+    {
+        transform: scale(1.2);
+    }
+}
+#closead
+{
+    position: absolute;
+    width:15px;
+    height: 15px;
+    top:50%;
+    right:15px;
+    transform:translateY(-50%);
+    border:none;
+    color:white;
+    background-color: transparent;
+    background-image: url(../IMG/close.png);
+    background-size: cover;
+    outline:none;
+}
+
+#closead:hover
+{
+    opacity: 0.8;
+}
+
+nav
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background:linear-gradient(-120deg, #003087, #009cde, #012169);
+    color:white;
+    z-index: 999;
+}
+
+#navindex{
+    top:50px;
+}
+
+#nav-lista
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav-link
+{
+    display:inline-block;
+    padding:20px;
+}
+
+.nav-link:hover:not(.active)
+{
+    border-bottom:3px solid rgb(167, 196, 250);
+}
+
+.nav-link a
+{
+    color:white;
+    text-decoration: none;   
+    font-weight: 500; 
+}
+
+.active
+{
+    border-bottom:3px solid rgb(0, 32, 90);
+    background-color:  rgba(0, 32, 90, 0.103);
+}
+
+#homeicon
+{
+    width:20px;
+    height: 20px;
+}
+
+#o-meni
+{
+    margin-top:150px;
+    height: 300px;
+}
+
+#portret
+{
+    position: relative;
+}
+
+#o-meni img
+{
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#txt-o-meni
+{
+    height:300px;
+    background-color: white;
+}
+
+#txt-o-meni p
+{
+    padding-left:15px;
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 20px;
+    color:rgb(56, 56, 56);
+    font-weight:400;
+}
+
+#txt-o-meni h1
+{
+    color:rgb(32, 32, 32);
+    padding-top:15px;
+    padding-left:15px;
+    font-weight: 300;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+
+#naslov-citati
+{
+    display: flex;
+    justify-content: center;
+    margin-top:25px;
+}
+
+#naslov-citati h1
+{
+    color:rgb(32, 32, 32);
+    font-weight: 300;
+    font-size:40px;
+}
+
+#txt-citati
+{
+    margin-top:25px;
+    background-color: white;
+}
+
+#citat
+{
+    padding:15px;
+    font-size:25px;
+
+}
+
+footer
+{
+    margin-top: 50px;
+    background-color: white;
+
+}
+
+#copyright
+{
+    color:rgb(94, 94, 94);
+    padding-top:30px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#lista-pesama
+{
+    margin-top:100px;
+}
+
+#lista-pesama tr:not(:first-child)
+{
+    cursor:pointer;
+}
+
+.tabela
+{
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.tabela th
+{
+    font-weight: 600;
+    padding:10px;
+}
+
+.tabela tr
+{
+    height:50px;
+}
+
+
+.tabela tr:nth-child(odd)
+{
+    background-color:#f1f1f1;
+}
+
+.tabela tr:nth-child(odd):hover:not(:first-child)
+{
+    color:rgb(0, 162, 255);
+}
+
+.tabela tr:nth-child(even)
+{
+    background-color:white;
+}
+
+.tabela tr:nth-child(even):hover
+{
+    color:rgb(0, 162, 255);
+}
+
+.tabela tr:nth-child(1)
+{
+    background-color:#009cde;
+    color:white;
+}
+
+
+.tabela td
+{
+    font-weight: 400;
+    padding:10px;
+}
+
+#tbl-sortiranje
+{
+    margin-top:100px;
+}
+
+#tbl-sortiranje th:hover{
+    background-color:#005e86;
+    cursor: pointer;
+}

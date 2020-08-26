@@ -1,0 +1,38 @@
+#naslov-pro
+{
+    font-weight: 300;
+    font-size: 40px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+iframe
+{
+    width:100%;
+    height:700px;
+}
+
+#lst-proto
+{
+
+}
+
+#lst-proto li
+{
+    display: inline-block;
+    padding:15px;
+    font-size:18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#lst-proto li:hover:not(.aktivan)
+{
+    background-color: rgb(0, 57, 122);
+}
+
+.aktivan
+{
+    background-color:rgb(0, 27, 71);
+    color:white;
+}

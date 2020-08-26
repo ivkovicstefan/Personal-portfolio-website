@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Igrica | SKI Projekat</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+
+<body>
+    <div id="opis-igre" class="row">
+        <div id="info" class="col-1">
+            <img src="../IMG/info.png" alt="" width="20px" height="20px">
+        </div>
+        <div class="col-11">
+            <p>Kliknite 16 brojeva u rastućem redosledu za 10 sekundi.</p>
+        </div>
+    </div>
+
+    <div id="rezultat" class="row">
+        <div class="col-11">
+            <p id="lblrezultat"></p>
+        </div>
+    </div>
+
+    <section>
+        <table id="tbl-igrica">
+            <tr>
+                <td onclick="proveriBroj(this)"></td>
+                <td onclick="proveriBroj(this)"></td>
+                <td onclick="proveriBroj(this)"></td>
+                <td onclick="proveriBroj(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="proveriBroj(this)"></td>
+                <td onclick="proveriBroj(this)"></td>
+                <td onclick="proveriBroj(this)"></td>
+                <td onclick="proveriBroj(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="proveriBroj(this)"></td>
+                <td onclick="proveriBroj(this)"></td>
+                <td onclick="proveriBroj(this)"></td>
+                <td onclick="proveriBroj(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="proveriBroj(this)"></td>
+                <td onclick="proveriBroj(this)"></td>
+                <td onclick="proveriBroj(this)"></td>
+                <td onclick="proveriBroj(this)"></td>
+            </tr>
+        </table>
+        <div id="linija-tajmer">
+            <div id="linija-napredak"></div>
+            <div id="tajmer">10</div>
+        </div>
+        <button id="btn-zapocni" onclick="zapocniIgru()">
+            Započni igru
+        </button>
+    </section>
+    
+    <script src="../JS/script_game10s.js"></script>
+</body>
+
+</html>

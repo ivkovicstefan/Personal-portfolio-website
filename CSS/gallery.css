@@ -1,0 +1,134 @@
+#galerija
+{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.btn-gal-lok
+{
+    padding:5px;
+    border:1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color:white;
+    font-size: 18px;
+    font-weight: 300;
+    outline:0px;
+    font-family: 'Segoe UI';
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.btn-gal-lok:hover
+{
+    background-color:rgb(22, 90, 218) !important;
+    color:white !important;
+    border:1px solid rgb(22, 90, 218)!important;
+}
+
+#galerija img
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    background-color:black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#galerija img:hover
+{
+    opacity: 0.6;
+}
+
+.aspect-1-1
+{
+    width: 100%;
+    padding-top: 100%;
+}
+
+#prikazSlika
+{
+    display:none;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.658);
+}
+
+.wrap-prikaz
+{
+    width:100%;
+    height: 100%;
+}
+
+#prikazanaSlikaOkvir
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:700px;
+    height:600px;
+}
+
+#prikazanaSlikaOkvir>div
+{
+    width: 100%;
+    height:100%;
+}
+
+#prikazanaSlika
+{
+ 
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+}
+
+#btn-prethodna
+{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%); 
+    color:rgb(224, 224, 224);
+    background-color: transparent;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+
+#btn-sledeca
+{
+    position: absolute;
+    top:50%;
+    right:0;
+    transform:translateY(-50%); 
+    color:rgb(224, 224, 224);
+    background-color: transparent;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+
+#btn-ugasi
+{
+    position: absolute;
+    right:10px;
+    top:10px;
+    color:rgb(224, 224, 224);
+    background-color: transparent;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-gal:hover
+{
+    color:rgb(168, 168, 168) !important;
+}

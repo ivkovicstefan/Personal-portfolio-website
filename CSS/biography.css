@@ -1,0 +1,97 @@
+#cover
+{
+    height: 150px;
+    width: 100%;
+    overflow: visible;
+    background-image: url(../IMG/cover.jpg);
+    background-position-y: bottom;
+    background-size: cover;
+}
+
+#wrapSlika
+{
+    position: absolute;
+    bottom:-100px;
+    left:50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 200px;
+}
+
+#profilnaSlika
+{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    border:5px solid white;
+}
+
+#bio
+{
+    padding-top:120px;
+    padding-bottom:40px;
+}
+
+.naslov-bio
+{
+    text-align: center;
+    font-weight: 300;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.paragraf-bio
+{
+    text-align: justify;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#gal-link
+{
+    box-shadow: rgba(0, 0, 0, 0.233) 0 0 10px;
+    border-radius: 10px;
+    background-color: black;
+    position: relative;
+    height: 100%;
+}
+
+#gal
+{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+    height: 200px;
+    transition: 1s;
+    vertical-align: middle;
+}
+
+#gal:hover
+{
+    opacity: 0.7;
+}
+
+#gal-btn
+{
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    border-style: none;
+    padding:10px;
+    background-color:rgb(22, 90, 218);
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size:15px;
+    color:white;
+    width:100px;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+#gal-btn:hover
+{
+    background-color: rgb(13, 75, 190);
+}

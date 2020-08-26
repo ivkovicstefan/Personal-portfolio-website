@@ -1,0 +1,49 @@
+.black{
+    background-color:black;
+    color:white;
+}
+.c-dark-gray{
+    background-color: rgb(20, 20, 20);
+    color:white;
+}
+
+.c-darke-gray{
+    background-color: rgb(29, 29, 29);
+    color:white;
+}
+
+.c-darker-gray{
+    background-color:rgb(46, 46, 46);
+    color:white;
+}
+
+.c-white{
+    background-color:white;
+    color:rgb(26, 26, 26);
+}
+
+.c-purple{
+    background-color: rgb(168, 0, 168);
+    color:white;
+}
+
+.c-coding-blue{
+    background-color:rgb(3, 79, 165);
+    color:white;
+}
+
+.c-comment-green{
+    background-color:rgb(22, 136, 22);
+    color:white;
+}
+
+.c-sql-orange{
+    background-color:#D19C00;
+    color:white;
+}
+
+.c-dark-blue
+{
+    background-color:rgb(0, 27, 71);
+    color:white;
+}
